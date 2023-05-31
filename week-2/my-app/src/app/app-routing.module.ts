@@ -1,3 +1,9 @@
+/* 
+  Title: exercise 2.2 Navigation
+  Author: Shane Hingtgen
+  Date: 5/30/23
+  Description: In this exercise we demonstrate how navigation works with Angular
+*/
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
