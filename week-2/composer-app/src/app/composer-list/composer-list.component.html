@@ -1,0 +1,30 @@
+<!--
+    ========================================================================================================================
+    ; Title: composer-list.component.html
+    ; Author: Shane Hingtgen
+    ; Bellevue University
+    ; Date: 5/31/23
+    ; Description: The purpose of this assignment is to create angular component and practice routing
+    ; Work Cited:
+    Coding Guidelines
+    Instructions - Exercise 2.4 – Routing in Action
+    ========================================================================================================================
+-->
+<div class="row">
+  <div class="col-sm-12">
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Full Name</th>
+          <th scope="col">Genre</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let composer of composers">
+        <tr>
+          <td scope="row">{{ composer.fullName }}</td>
+          <td scope="row">{{ composer.genre }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
