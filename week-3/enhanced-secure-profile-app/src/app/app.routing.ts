@@ -10,14 +10,12 @@
       Instructions - Exercise 1.5 - Components
       Instructions - Exercise 2.3 – Data Binding
       Instructions - Exercise 3.3 - Passing Data to Routes - Part 2
-      Instructions - Assignment 3.4 - Guarding Routes
     ========================================================================================================================
  */
 
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SignInComponent } from './sign-in/sign-in.component';
-import { SignInGuard } from './sign-in.guard';
 
 export const AppRoutes: Routes = [
   {
@@ -27,6 +25,5 @@ export const AppRoutes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-    canActivate: [SignInGuard],
   },
 ];

@@ -31,7 +31,7 @@
   <h2>Exercise 3.3 - Passing Data to Routes, Part 2</h2>
   <br /><br />
 
-  <div class="row">
+  <div class="row" *ngIf="isLoggedIn; else showError">
     <div class="col-sm-4">
       <app-my-image> </app-my-image>
     </div>
@@ -39,4 +39,13 @@
       <app-my-details> </app-my-details>
     </div>
   </div>
+  <ng-template #showError>
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class="alert alert-danger">
+          You are not authorized to view this content.
+        </h4>
+      </div>
+    </div>
+  </ng-template>
 </div>

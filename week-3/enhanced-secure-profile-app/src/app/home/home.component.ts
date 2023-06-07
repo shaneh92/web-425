@@ -9,7 +9,6 @@
     Coding Guidelines
     Instructions - Exercise 2.4 – Routing in Action
     Instructions - Exercise 3.3 - Passing Data to Routes - Part 2
-    Instructions - Assignment 3.4 - Guarding Routes
     ========================================================================================================================
  */
 
@@ -22,7 +21,12 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  isLoggedIn: Boolean;
+  constructor(private route: ActivatedRoute) {
+    this.isLoggedIn = Boolean(
+      this.route.snapshot.queryParamMap.get('isLoggedIn') //This is part of sign-in.component.ts queryParams { isLoggedIn: this.isLoggedIn }
+    );
+  }
 
   ngOnInit(): void {}
 }
