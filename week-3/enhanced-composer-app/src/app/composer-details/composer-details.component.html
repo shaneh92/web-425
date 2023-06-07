@@ -1,0 +1,25 @@
+<!--
+    ========================================================================================================================
+    ; Title: composer-details-component.html
+    ; Author: Shane hingtgen
+    ; Bellevue University
+    ; Date: 6/6/23
+    ; Description: The purpose of this assignment is to create angular component, practice routing and passing data through routes
+    ; Work Cited:
+    Coding Guidelines
+    Instructions - Exercise 2.4 – Routing in Action
+    Instructions - Exercise 3.2 - Passing Data to Routes - Part 1
+    ========================================================================================================================
+-->
+
+<div class="row">
+  <div class="col-sm-12">
+    <ul class="list-group">
+      <li class="list-group-item">Composer ID: {{ composer.composerId }}</li>
+      <li class="list-group-item">Full Name: {{ composer.fullName }}</li>
+      <li class="list-group-item">Genre: {{ composer.genre }}</li>
+    </ul>
+    <br />
+    <a routerLink="/composer-list" class="float-right">Return to Composers</a>
+  </div>
+</div>
