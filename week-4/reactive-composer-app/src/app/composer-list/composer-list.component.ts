@@ -10,6 +10,10 @@
     Instructions - Exercise 2.4 – Routing in Action
     Instructions - Exercise 3.2 - Passing Data to Routes - Part 1
     Instructions - Exercise 4.2 - Inversion of Control and Dependency Injection
+    https://www.learnrxjs.io/learn-rxjs/operators/filtering/debouncetime
+    https://www.learnrxjs.io/learn-rxjs/operators/transformation/map
+    https://www.learnrxjs.io/learn-rxjs/concepts/rxjs-primer#pipe
+    https://www.learnrxjs.io/learn-rxjs/operators/filtering/filter
     ========================================================================================================================
  */
 import { Component, OnInit } from '@angular/core';
