@@ -1,6 +1,6 @@
 /*
     ========================================================================================================================
-    ; Title: app.component.ts
+    ; Title: app-routing.module.ts
     ; Author: Shane Hingtgen
     ; Bellevue University
     ; Date: 6/20/23
@@ -14,18 +14,21 @@
     ========================================================================================================================
  */
 
-import { Component } from '@angular/core';
-import { AppModule } from './app.module';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { BookListComponent } from './book-list/book-list.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+const routes: Routes = [
+  { path: '', component: BookListComponent },
+  { path: 'book-list', component: BookListComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'about', component: AboutComponent },
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppComponent {
-  assignment: string;
-
-  constructor() {
-    this.assignment = 'Exercise 5.2 - Navigation and Layout';
-  }
-}
+export class AppRoutingModule {}

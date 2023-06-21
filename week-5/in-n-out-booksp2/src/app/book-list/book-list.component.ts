@@ -1,6 +1,6 @@
 /*
     ========================================================================================================================
-    ; Title: app.component.ts
+    ; Title: book-list.component.ts
     ; Author: Shane Hingtgen
     ; Bellevue University
     ; Date: 6/20/23
@@ -14,18 +14,15 @@
     ========================================================================================================================
  */
 
-import { Component } from '@angular/core';
-import { AppModule } from './app.module';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-book-list',
+  templateUrl: './book-list.component.html',
+  styleUrls: ['./book-list.component.scss'],
 })
-export class AppComponent {
-  assignment: string;
+export class BookListComponent implements OnInit {
+  constructor() {}
 
-  constructor() {
-    this.assignment = 'Exercise 5.2 - Navigation and Layout';
-  }
+  ngOnInit(): void {}
 }

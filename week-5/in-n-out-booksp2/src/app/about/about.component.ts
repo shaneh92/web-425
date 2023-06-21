@@ -1,6 +1,6 @@
 /*
     ========================================================================================================================
-    ; Title: app.component.ts
+    ; Title: about.component.ts
     ; Author: Shane Hingtgen
     ; Bellevue University
     ; Date: 6/20/23
@@ -14,18 +14,15 @@
     ========================================================================================================================
  */
 
-import { Component } from '@angular/core';
-import { AppModule } from './app.module';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss'],
 })
-export class AppComponent {
-  assignment: string;
+export class AboutComponent implements OnInit {
+  constructor() {}
 
-  constructor() {
-    this.assignment = 'Exercise 5.2 - Navigation and Layout';
-  }
+  ngOnInit(): void {}
 }
