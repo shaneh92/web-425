@@ -8,6 +8,7 @@
     ; Work Cited:
     Coding Guidelines
     Instructions - Exercise 5.1 - Navigation and Layout
+    Instructions - Exercise 5.3 - Data Tables
     Angular Tutorial video https://www.youtube.com/watch?v=J2RHvuYFna4
     Angular Tutorial video https://www.youtube.com/watch?v=Wif3MsDN7Pg
     Course GitHub
@@ -31,6 +32,8 @@ import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
 
+import { MatTableModule } from '@angular/material/table';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,6 +51,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatListModule,
     FlexLayoutModule,
     MatIconModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
