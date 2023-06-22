@@ -11,6 +11,7 @@
     Instructions - Exercise 5.3 - Data Tables
     Angular Tutorial video https://www.youtube.com/watch?v=J2RHvuYFna4
     Angular Tutorial video https://www.youtube.com/watch?v=Wif3MsDN7Pg
+    Material Angular https://material.angular.io/components/table/examples
     Course GitHub
     ========================================================================================================================
  */
