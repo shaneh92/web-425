@@ -37,7 +37,8 @@ export class BooksService {
     '9780590302715',
     '9780316769532',
     '9780743273565',
-    '9780590405959'
+    '9780590405959',
+    '9780345339683'
   ]
 
   constructor(private http: HttpClient) {
@@ -46,7 +47,7 @@ export class BooksService {
 
   getBooks() {
     let params = new HttpParams()
-    params = params.append('bibkeys', `IBSN: ${this.isbns.join(',')}`)
+    params = params.append('bibkeys', `IBSN:${this.isbns.join(',')}`)
     params = params.append('format', 'json')
     params = params.append('jscmd', 'details')
     
