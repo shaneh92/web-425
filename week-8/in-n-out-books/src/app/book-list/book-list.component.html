@@ -25,7 +25,7 @@
   <div class="grid-container">
     <ng-container *ngFor="let book of books">
       <mat-card class="grid-container__item mat-elevation-z8">
-        <mat-card-title>
+        <mat-card-title style="text-align:center;">
           <a class="grid-container__ahref blue" (click)="showBookDetails(book.isbn)">{{book.title}}</a>
         </mat-card-title> <br />
         <mat-card-content>
